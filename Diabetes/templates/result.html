@@ -4,7 +4,11 @@
 	<title>Results</title>
 	<style type="text/css">
 
-		
+		.heading{
+			text-align: center;
+			font-family: sans-serif;
+		}		
+
 		.banner{
 			position: absolute;
 		      height: 100px;
@@ -15,22 +19,24 @@
 		      text-align: center;
 			  font-family: sans-serif;
 			  top: 200px;
-			  left: 650px;
+			  left: 730px;
 
 
 		}
-		.body{
+		.doc_img{
 			background-image: url("static/img/result_bg.png");
-			width: 500;
-			height: 500;
+			width: 150;
+			height: 150;
 			align-items: center;
 			background-repeat: no-repeat;
 		}
 	</style>
 </head>
 <body class="body">
+	<h1 class="heading">Hello {{user_name}} here are your results:  </h1>
+	<img class="doc_img" src="static/img/result_bg.png">
 	<div class="banner">
-		<h1 class="heading">Hello {{user_name}} here are your results: <br> 
+		<h1> 
 			You {{result}} diabetic 
 		</h1>
 		
