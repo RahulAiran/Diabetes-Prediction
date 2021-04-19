@@ -3,23 +3,39 @@
 <head>
 	<title>Results</title>
 	<style type="text/css">
+
+		
 		.banner{
-			position: relative;
-		      height: 500px;
-		      background-image: url("analysis_banner.jpg");  
+			position: absolute;
+		      height: 100px;
 		      background-size: cover;
 		      display: flex;
 		      justify-content: center;
 		      align-items: center;
 		      text-align: center;
+			  font-family: sans-serif;
+			  top: 200px;
+			  left: 650px;
+
+
+		}
+		.body{
+			background-image: url("static/img/result_bg.png");
+			width: 500;
+			height: 500;
+			align-items: center;
+			background-repeat: no-repeat;
 		}
 	</style>
 </head>
-<body>
+<body class="body">
 	<div class="banner">
-		<h1>Hello {{user_name}} here are your results: <br> 
+		<h1 class="heading">Hello {{user_name}} here are your results: <br> 
 			You {{result}} diabetic 
 		</h1>
+		
+		
+		
 	</div>
 
 </body>

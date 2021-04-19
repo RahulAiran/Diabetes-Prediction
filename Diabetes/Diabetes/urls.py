@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from deploy_app import views 
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('enter_details', views.home,name="home"),
     path('result',views.result,name="result")
 ]
+
+urlpatterns += staticfiles_urlpatterns()

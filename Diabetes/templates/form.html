@@ -43,7 +43,7 @@
       .banner {
       position: relative;
       height: 500px;
-      background-image: url("{% static 'diabetes-banner.jpg' %}");  
+      background-image: url("/static/img/diabetes-banner.jpg");  
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -193,39 +193,46 @@
         </div>
         <p>Please enter following values</p>
 
-      
         <div class="item">
           <label for="name">Name<span>*</span></label>
           <input id="name" type="text" name="name" required/>
         </div>
+
         <div class="item">
           <label for="pregnant">Number of times you have been pregnant<span>*</span></label>
           <input id="pregnant" type="number" name="pregnant" required/>
         </div>
+
         <div class="item">
           <label for="glucose">Glucose Levels<span>*</span></label>
           <input id="glucose" type="number" name="glucose" step="any" required/>
         </div>
+
         <div class="item">
           <label for="bp">Blood Pressure<span>*</span></label>
           <input id="bp" type="number" name="bp" required/>
         </div>
+
         <div class="item">
           <label for="thickness">Skin Thickness<span>*</span></label>
           <input id="thickness" type="number" name="thickness" step="any" required/>
         </div>
+
         <div class="item">
           <label for="insulin">Insulin<span>*</span></label>
           <input id="insulin" type="number" name="insulin" step="any" required/>
         </div>
+
         <div class="item">
           <label for="bmi">BMI<span>*</span></label>
           <input id="bmi" type="number" name="bmi" step="any" required/>
         </div>
+
         <div class="item">
           <label for="age">Age<span>*</span></label>
           <input id="age" type="number" name="age" step="any" required/>
         </div>
+
         <div class="pf">
           <label for="pf">Diabetes Pedigree Function<span>*</span></label>
           <input id="pf" type="number" name="pf" step="any" required/>
